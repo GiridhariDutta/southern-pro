@@ -1,0 +1,535 @@
+/* Exact Enterprise Specification Stylesheet for Southern Pro Roofing & Restoration */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap');
+
+:root {
+  --primary-navy: #062B55;
+  --dark-navy: #031B38;
+  --green-accent: #76B82A;
+  --green-hover: #64A022;
+  --white: #FFFFFF;
+  --light-gray: #F5F7FA;
+  --border-light: #E2E8F0;
+  --text-muted: #64748B;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  background-color: var(--light-gray);
+  color: var(--primary-navy);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Typography Headings */
+h1, h2, h3, .heading-font {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+/* Buttons Specification */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.btn-primary-cta {
+  background: var(--green-accent);
+  color: var(--white);
+  border-radius: 6px;
+  padding: 18px 35px;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+.btn-primary-cta:hover {
+  background: var(--green-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(118, 184, 42, 0.35);
+}
+
+.btn-secondary-cta {
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+  border-radius: 6px;
+  padding: 18px 32px;
+  font-size: 0.95rem;
+}
+.btn-secondary-cta:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.btn-card-submit {
+  background: var(--green-accent);
+  color: var(--white);
+  border-radius: 6px;
+  width: 100%;
+  padding: 16px;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  margin-top: 6px;
+}
+.btn-card-submit:hover {
+  background: var(--green-hover);
+}
+
+.btn-view-all-services {
+  background: var(--white);
+  border: 1.5px solid var(--primary-navy);
+  color: var(--primary-navy);
+  padding: 12px 20px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  margin-top: auto;
+}
+
+/* Top Announcement Bar */
+.top-bar {
+  background-color: var(--dark-navy);
+  color: #94A3B8;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.top-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-left-items {
+  display: flex;
+  gap: 28px;
+}
+.top-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #CBD5E1;
+}
+
+/* Top Navigation Navbar */
+.main-header {
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+.logo-brand img {
+  height: 55px;
+  width: auto;
+  display: block;
+}
+.nav-menu {
+  display: flex;
+  gap: 26px;
+  list-style: none;
+}
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-navy);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+}
+.nav-link.active, .nav-link:hover {
+  color: var(--green-accent);
+}
+.phone-cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.phone-icon-circle {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--green-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+.phone-details {
+  display: flex;
+  flex-direction: column;
+}
+.phone-number {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-navy);
+  font-weight: 800;
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+.phone-label {
+  color: var(--green-accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* Hero Section Specification */
+.hero-section {
+  position: relative;
+  background: linear-gradient(90deg, #031B38 0%, rgba(3, 27, 56, 0.95) 42%, rgba(3, 27, 56, 0.2) 85%), url('ChatGPT Image Jun 29, 2026, 08_47_34 PM.png') center/cover no-repeat;
+  padding: 70px 0 100px;
+  color: var(--white);
+  overflow: hidden;
+}
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 45px;
+  align-items: center;
+  position: relative;
+}
+.small-top-label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--green-accent);
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+.hero-main-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.green-text {
+  color: var(--green-accent);
+}
+.hero-sub-heading {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--white);
+  margin-bottom: 14px;
+}
+.hero-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin-bottom: 36px;
+}
+.hero-cta-group {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+.trust-badges-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.trust-badge-item {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.check-mark {
+  color: var(--green-accent);
+  font-weight: 700;
+}
+
+/* Floating Right Side Inspection Form Card Specification */
+.hero-floating-card {
+  background: rgba(3, 27, 56, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  padding: 34px 28px;
+}
+.form-card-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.form-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.45rem;
+  color: var(--white);
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+.input-wrap {
+  margin-bottom: 14px;
+}
+.input-wrap input, .input-wrap select {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 6px;
+  border: 1px solid #E2E8F0;
+  background: var(--light-gray);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  outline: none;
+  color: var(--primary-navy);
+}
+.input-wrap select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%64748B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+}
+
+/* Trust Statistics Banner */
+.trust-stats-section {
+  background: var(--white);
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+.stats-flex-row {
+  display: grid;
+  grid-template-columns: 1.2fr repeat(4, 1fr);
+  align-items: center;
+}
+.stat-col {
+  padding: 0 16px;
+  border-right: 1px solid var(--border-light);
+  text-align: center;
+}
+.stat-col:last-child {
+  border-right: none;
+}
+.stat-texas-col {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+}
+.stat-big-number {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--primary-navy);
+  line-height: 1;
+}
+.plus-sign, .star-sign {
+  color: var(--green-accent);
+}
+.stat-desc-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* Services Section */
+.services-main-section {
+  padding: 80px 0;
+  background-color: var(--light-gray);
+}
+.services-grid-layout {
+  display: grid;
+  grid-template-columns: 230px repeat(4, 1fr) 250px;
+  gap: 18px;
+  align-items: stretch;
+}
+.services-left-block {
+  display: flex;
+  flex-direction: column;
+  padding-right: 8px;
+}
+.services-top-tag {
+  color: var(--green-accent);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.services-main-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--primary-navy);
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+.services-main-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+
+.service-item-card {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+}
+.service-card-image-box {
+  height: 145px;
+  position: relative;
+}
+.service-card-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.service-floating-badge {
+  position: absolute;
+  bottom: -18px;
+  left: 18px;
+  width: 40px;
+  height: 40px;
+  background: var(--white);
+  border: 2px solid var(--green-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-card-body {
+  padding: 26px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.service-card-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--primary-navy);
+  margin-bottom: 8px;
+}
+.service-card-text {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+.service-card-link {
+  color: var(--green-accent);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 0.78rem;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+/* Service AI Card */
+.service-ai-card {
+  background: var(--dark-navy);
+  border-radius: 10px;
+  padding: 22px 18px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+.ai-card-top-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.ai-robot-circle {
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--green-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ai-robot-main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.ai-robot-sub-title {
+  font-size: 0.72rem;
+  color: #94A3B8;
+}
+.ai-robot-checklist {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.ai-robot-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+  color: #E2E8F0;
+}
+.ai-question-heading {
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.ai-input-box-wrapper {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 6px 12px;
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+.ai-input-box-wrapper input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-size: 0.82rem;
+}
+.ai-input-send-btn {
+  background: var(--green-accent);
+  border: none;
+  color: var(--white);
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 800;
+}
