@@ -86,10 +86,10 @@ h1, h2, h3, .heading-font {
   color: var(--white);
   border-radius: 6px;
   width: 100%;
-  padding: 16px;
-  font-size: 0.95rem;
+  padding: 14px;
+  font-size: 0.9rem;
   letter-spacing: 0.5px;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 .btn-card-submit:hover {
   background: var(--green-hover);
@@ -250,7 +250,7 @@ h1, h2, h3, .heading-font {
 }
 .hero-container {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1.3fr 0.7fr;
   gap: 45px;
   align-items: center;
   position: relative;
@@ -315,38 +315,41 @@ h1, h2, h3, .heading-font {
   font-weight: 700;
 }
 
-/* Floating Right Side Inspection Form Card Specification */
+/* Sleek, Compact Inspection Form Card Specification */
 .hero-floating-card {
   background: rgba(3, 27, 56, 0.88);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
   border-radius: 12px;
-  padding: 34px 28px;
+  padding: 26px 22px;
+  max-width: 410px;
+  width: 100%;
+  margin-left: auto;
 }
 .form-card-header {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 .form-card-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   color: var(--white);
-  line-height: 1.25;
+  line-height: 1.2;
   letter-spacing: -0.5px;
 }
 .input-wrap {
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 }
 .input-wrap input, .input-wrap select {
   width: 100%;
-  padding: 14px 18px;
+  padding: 12px 15px;
   border-radius: 6px;
   border: 1px solid #E2E8F0;
   background: var(--light-gray);
   font-family: 'Inter', sans-serif;
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   outline: none;
   color: var(--primary-navy);
 }
@@ -354,8 +357,8 @@ h1, h2, h3, .heading-font {
   appearance: none;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%64748B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right 16px center;
-  background-size: 16px;
+  background-position: right 14px center;
+  background-size: 15px;
 }
 
 /* Trust Statistics Banner */
@@ -848,6 +851,7 @@ h1, h2, h3, .heading-font {
   .hero-section { padding: 50px 0 70px; background: linear-gradient(180deg, #031B38 0%, rgba(3, 27, 56, 0.95) 100%), url('ChatGPT Image Jun 29, 2026, 08_47_34 PM.png') center/cover no-repeat; }
   .hero-container { grid-template-columns: 1fr; gap: 35px; }
   .hero-main-heading { font-size: 44px; }
+  .hero-floating-card { max-width: 100%; margin-left: 0; }
   .stats-flex-row { grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .stat-col { border-right: none; }
   .stat-texas-col { grid-column: span 3; justify-content: center; }
@@ -875,5 +879,5 @@ h1, h2, h3, .heading-font {
   .hero-main-heading { font-size: 30px; }
   .stats-flex-row { grid-template-columns: 1fr; }
   .stat-texas-col { grid-column: span 1; }
-  .hero-floating-card { padding: 24px 18px; }
+  .hero-floating-card { padding: 22px 16px; }
 }
