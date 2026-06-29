@@ -1,19 +1,14 @@
 const { chromium } = require('playwright');
 
 (async () => {
-  console.log('Capturing AI chat modal open render via Playwright...');
+  console.log('Capturing mobile view render via Playwright...');
   const browser = await chromium.launch({ headless: true });
-  const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+  const context = await browser.newContext({ viewport: { width: 375, height: 812 } }); // iPhone X/12 resolution
   const page = await context.newPage();
 
   await page.goto('http://localhost:3000', { waitUntil: 'networkidle' });
+  await page.screenshot({ path: 'mobile_render.png', fullPage: false });
 
-  // Click AI Chat Toggle Button
-  await page.click('#aiChatToggleBtn');
-  await page.waitForTimeout(500);
-
-  await page.screenshot({ path: 'playwright_ai_chat.png', fullPage: false });
-  console.log('Successfully captured playwright_ai_chat.png');
-
+  console.log('Successfully captured mobile_render.png');
   await browser.close();
 })();

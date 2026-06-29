@@ -1,4 +1,11 @@
 node_modules/
-.DS_Store
 *.log
+clean_exact_render.png
+mobile_render.png
+playwright_*.png
+real_screen.png
+southern_pro_*.png
+scrape_site.js
+convert_webp.js
 live_site_raw.html
+live_site_data.txt

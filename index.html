@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Southern Pro Roofing & Restoration</title>
-  <link rel="icon" type="image/png" href="7316c2e5-c6fb-4afb-9ba2-5e906c2e9991.png">
+  <link rel="icon" type="image/webp" href="7316c2e5-c6fb-4afb-9ba2-5e906c2e9991.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
@@ -39,10 +39,17 @@
   <header class="main-header">
     <div class="container header-container">
       <a href="#" class="logo-brand">
-        <img src="7316c2e5-c6fb-4afb-9ba2-5e906c2e9991.png" alt="Southern Pro Roofing & Restoration Logo">
+        <img src="7316c2e5-c6fb-4afb-9ba2-5e906c2e9991.webp" alt="Southern Pro Roofing & Restoration Logo">
       </a>
 
-      <nav class="nav-wrapper">
+      <!-- Mobile Hamburger Toggle Button -->
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <nav class="nav-wrapper" id="navWrapper">
         <ul class="nav-menu">
           <li><a href="#home" class="nav-link active">HOME</a></li>
           <li><a href="#roofing" class="nav-link">ROOFING</a></li>
@@ -57,10 +64,10 @@
           <li class="dropdown-item">
             <a href="#" class="nav-link dropdown-toggle">SAMPLE DESIGNS <span class="caret">▾</span></a>
             <ul class="dropdown-menu">
-              <li><a href="#" class="design-preview-link" data-img="Jun 29, 2026, 06_54_32 PM.png" data-title="Design Option 1 (Active)">Design Option 1 (Active)</a></li>
-              <li><a href="#" class="design-preview-link" data-img="Jun 29, 2026, 01_33_50 PM.png" data-title="Design Option 2 (Sample)">Design Option 2 (Sample)</a></li>
-              <li><a href="#" class="design-preview-link" data-img="Jun 29, 2026, 01_33_52 PM.png" data-title="Design Option 3 (Sample)">Design Option 3 (Sample)</a></li>
-              <li><a href="#" class="design-preview-link" data-img="Jun 29, 2026, 06_56_29 PM.png" data-title="Design Option 4 (Sample)">Design Option 4 (Sample)</a></li>
+              <li><a href="#" class="design-preview-link" data-img="Jun 29, 2026, 06_54_32 PM.webp" data-title="Design Option 1 (Active)">Design Option 1 (Active)</a></li>
+              <li><a href="#" class="design-preview-link" data-img="Jun 29, 2026, 01_33_50 PM.webp" data-title="Design Option 2 (Sample)">Design Option 2 (Sample)</a></li>
+              <li><a href="#" class="design-preview-link" data-img="Jun 29, 2026, 01_33_52 PM.webp" data-title="Design Option 3 (Sample)">Design Option 3 (Sample)</a></li>
+              <li><a href="#" class="design-preview-link" data-img="Jun 29, 2026, 06_56_29 PM.webp" data-title="Design Option 4 (Sample)">Design Option 4 (Sample)</a></li>
             </ul>
           </li>
         </ul>
@@ -215,7 +222,7 @@
         <div class="service-card-body">
           <h3 class="service-card-title">Roofing</h3>
           <p class="service-card-text">Roof replacements, repairs, and installations built to last.</p>
-          <a href="#" class="service-card-link design-preview-link" data-img="Jun 29, 2026, 06_54_32 PM.png" data-title="Roofing Design Mockup 1">LEARN MORE &nbsp;&rarr;</a>
+          <a href="#" class="service-card-link design-preview-link" data-img="Jun 29, 2026, 06_54_32 PM.webp" data-title="Roofing Design Mockup 1">LEARN MORE &nbsp;&rarr;</a>
         </div>
       </div>
 
@@ -229,7 +236,7 @@
         <div class="service-card-body">
           <h3 class="service-card-title">Storm Damage Restoration</h3>
           <p class="service-card-text">From hail to wind damage, we restore your home and help with the insurance process.</p>
-          <a href="#" class="service-card-link design-preview-link" data-img="Jun 29, 2026, 01_33_50 PM.png" data-title="Storm Damage Mockup 2">LEARN MORE &nbsp;&rarr;</a>
+          <a href="#" class="service-card-link design-preview-link" data-img="Jun 29, 2026, 01_33_50 PM.webp" data-title="Storm Damage Mockup 2">LEARN MORE &nbsp;&rarr;</a>
         </div>
       </div>
 
@@ -243,7 +250,7 @@
         <div class="service-card-body">
           <h3 class="service-card-title">Solar Solutions</h3>
           <p class="service-card-text">Energy-efficient solar solutions tailored to your home and lifestyle.</p>
-          <a href="#" class="service-card-link design-preview-link" data-img="Jun 29, 2026, 01_33_52 PM.png" data-title="Solar Solutions Mockup 3">LEARN MORE &nbsp;&rarr;</a>
+          <a href="#" class="service-card-link design-preview-link" data-img="Jun 29, 2026, 01_33_52 PM.webp" data-title="Solar Solutions Mockup 3">LEARN MORE &nbsp;&rarr;</a>
         </div>
       </div>
 
@@ -257,7 +264,7 @@
         <div class="service-card-body">
           <h3 class="service-card-title">Gutters &amp; Siding</h3>
           <p class="service-card-text">Protect your home with quality gutters and siding that stand the test of time.</p>
-          <a href="#" class="service-card-link design-preview-link" data-img="Jun 29, 2026, 06_56_29 PM.png" data-title="Gutters & Siding Mockup 4">LEARN MORE &nbsp;&rarr;</a>
+          <a href="#" class="service-card-link design-preview-link" data-img="Jun 29, 2026, 06_56_29 PM.webp" data-title="Gutters & Siding Mockup 4">LEARN MORE &nbsp;&rarr;</a>
         </div>
       </div>
 
@@ -285,6 +292,88 @@
       </div>
     </div>
   </section>
+
+  <!-- Comprehensive Relatable Enterprise Footer -->
+  <footer class="site-footer">
+    <div class="footer-cta-banner">
+      <div class="container footer-cta-container">
+        <div>
+          <h3 class="footer-cta-heading">READY TO PROTECT YOUR HOME?</h3>
+          <p class="footer-cta-sub">Get your 100% Free On-Site Roof Inspection &amp; Line-Item Estimate today!</p>
+        </div>
+        <div class="footer-cta-buttons">
+          <a href="tel:2546614064" class="btn btn-primary-cta">CALL (254) 661-4064</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-main-content">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <img src="7316c2e5-c6fb-4afb-9ba2-5e906c2e9991.webp" alt="Southern Pro Roofing & Restoration Logo" class="footer-logo">
+          <p class="footer-brand-desc">
+            Southern Pro Roofing &amp; Restoration, LLC is a premier licensed roofing contractor providing high-converting customer acquisition, storm damage restoration, and quality roofing systems.
+          </p>
+          <div class="footer-badges">
+            <span class="badge-tag">GAF Master Elite®</span>
+            <span class="badge-tag">BBB A+ Rated</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="#roofing">Residential Roof Replacement</a></li>
+            <li><a href="#storm">Storm Damage Restoration</a></li>
+            <li><a href="#solar">Rooftop Solar Solutions</a></li>
+            <li><a href="#services">Gutters &amp; Siding Protection</a></li>
+            <li><a href="#services">Commercial Roofing Systems</a></li>
+            <li><a href="#contact">Emergency Leak Repairs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Service Areas</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">Central Texas (Waco, Temple, Killeen)</a></li>
+            <li><a href="#">Austin &amp; Round Rock Region</a></li>
+            <li><a href="#">Greater Tampa Bay Area, FL</a></li>
+            <li><a href="#">Orlando &amp; Central Florida</a></li>
+            <li><a href="#">Sarasota &amp; Bradenton Region</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact-col">
+          <h4 class="footer-col-title">Contact &amp; Support</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" fill="#76B82A" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <div>
+              <div class="contact-bold">(254) 661-4064</div>
+              <div class="contact-sub">24/7 Emergency Storm Hotline</div>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" fill="#76B82A" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <div>
+              <div class="contact-bold">info@southernprorestoration.com</div>
+              <div class="contact-sub">Instant Support Response</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="container bottom-bar-flex">
+        <div>© 2026 Southern Pro Roofing &amp; Restoration, LLC. All Rights Reserved.</div>
+        <div class="bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">License #CCC1332984</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Floating AI Assistant Chat Widget -->
   <div class="floating-ai-widget" id="floatingAiWidget">

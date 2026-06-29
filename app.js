@@ -1,6 +1,23 @@
 // Southern Pro Roofing & Restoration Interactive JavaScript
 document.addEventListener('DOMContentLoaded', () => {
   
+  // Mobile Hamburger Menu Toggle
+  const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+  const navWrapper = document.getElementById('navWrapper');
+
+  if (mobileMenuToggle && navWrapper) {
+    mobileMenuToggle.addEventListener('click', () => {
+      navWrapper.classList.toggle('active');
+    });
+
+    // Close menu when clicking link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navWrapper.classList.remove('active');
+      });
+    });
+  }
+
   // Lead Form Submission
   const leadForm = document.getElementById('leadForm');
   if (leadForm) {

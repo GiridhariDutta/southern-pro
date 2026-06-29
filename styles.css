@@ -149,6 +149,28 @@ h1, h2, h3, .heading-font {
   width: auto;
   display: block;
 }
+
+/* Mobile Menu Toggle Button */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 32px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+.hamburger-bar {
+  width: 100%;
+  height: 3.5px;
+  background-color: var(--primary-navy);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
 .nav-menu {
   display: flex;
   gap: 24px;
@@ -243,7 +265,7 @@ h1, h2, h3, .heading-font {
 /* Hero Section Specification */
 .hero-section {
   position: relative;
-  background: linear-gradient(90deg, #031B38 0%, rgba(3, 27, 56, 0.95) 42%, rgba(3, 27, 56, 0.2) 85%), url('ChatGPT Image Jun 29, 2026, 08_47_34 PM.png') center/cover no-repeat;
+  background: linear-gradient(90deg, #031B38 0%, rgba(3, 27, 56, 0.95) 42%, rgba(3, 27, 56, 0.2) 85%), url('ChatGPT Image Jun 29, 2026, 08_47_34 PM.webp') center/cover no-repeat;
   padding: 70px 0 100px;
   color: var(--white);
   overflow: hidden;
@@ -578,6 +600,147 @@ h1, h2, h3, .heading-font {
   font-weight: 800;
 }
 
+/* COMPREHENSIVE RELATABLE ENTERPRISE FOOTER */
+.site-footer {
+  background: var(--dark-navy);
+  color: #94A3B8;
+  position: relative;
+}
+.footer-cta-banner {
+  background: linear-gradient(90deg, #062B55 0%, #031B38 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 0;
+}
+.footer-cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-cta-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.footer-cta-sub {
+  color: #CBD5E1;
+  font-size: 0.98rem;
+  margin-top: 6px;
+}
+
+.footer-main-content {
+  padding: 70px 0 50px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1.1fr;
+  gap: 40px;
+}
+.footer-logo {
+  height: 50px;
+  width: auto;
+  margin-bottom: 18px;
+}
+.footer-brand-desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #CBD5E1;
+  margin-bottom: 20px;
+}
+.footer-badges {
+  display: flex;
+  gap: 10px;
+}
+.badge-tag {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--green-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.footer-col-title {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+.footer-col-title::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--green-accent);
+}
+
+.footer-links-list {
+  list-style: none;
+}
+.footer-links-list li {
+  margin-bottom: 12px;
+}
+.footer-links-list a {
+  color: #94A3B8;
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: all 0.2s ease;
+}
+.footer-links-list a:hover {
+  color: var(--green-accent);
+  padding-left: 4px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.contact-bold {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.contact-sub {
+  font-size: 0.78rem;
+  color: #94A3B8;
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 22px 0;
+  font-size: 0.82rem;
+  color: #64748B;
+}
+.bottom-bar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.bottom-links {
+  display: flex;
+  gap: 20px;
+}
+.bottom-links a {
+  color: #64748B;
+  text-decoration: none;
+}
+.bottom-links a:hover {
+  color: var(--white);
+}
+
 /* FLOATING AI ASSISTANT CHAT WIDGET & MODAL */
 .floating-ai-widget {
   position: fixed;
@@ -842,13 +1005,63 @@ h1, h2, h3, .heading-font {
   .services-grid-layout { grid-template-columns: 200px repeat(2, 1fr) 220px; }
   .nav-menu { gap: 16px; }
   .nav-link { font-size: 13px; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
 }
 
 @media (max-width: 992px) {
-  .header-container { height: auto; padding: 15px 24px; flex-wrap: wrap; gap: 15px; }
-  .nav-wrapper { width: 100%; order: 3; }
-  .nav-menu { justify-content: center; flex-wrap: wrap; gap: 14px 20px; }
-  .hero-section { padding: 50px 0 70px; background: linear-gradient(180deg, #031B38 0%, rgba(3, 27, 56, 0.95) 100%), url('ChatGPT Image Jun 29, 2026, 08_47_34 PM.png') center/cover no-repeat; }
+  .top-bar { padding: 6px 0; }
+  .top-bar-container { flex-direction: column; gap: 4px; text-align: center; }
+  .top-left-items { gap: 12px; flex-wrap: wrap; justify-content: center; }
+  .top-item, .top-right-item { font-size: 0.75rem; }
+
+  .header-container { height: 75px; padding: 10px 20px; position: relative; }
+  .logo-brand img { height: 45px; }
+  
+  .mobile-menu-toggle { display: flex; }
+
+  .nav-wrapper {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    display: none;
+    padding: 20px;
+    border-top: 1px solid var(--border-light);
+    z-index: 999;
+  }
+  .nav-wrapper.active {
+    display: block;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
+  .nav-link {
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    padding: 6px 0;
+  }
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 8px 0 0 15px;
+    background: transparent;
+  }
+  .dropdown-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .phone-number { font-size: 1.1rem; }
+  .phone-icon-circle { width: 38px; height: 38px; }
+  .phone-icon-circle svg { width: 18px; height: 18px; }
+
+  .hero-section { padding: 50px 0 70px; background: linear-gradient(180deg, #031B38 0%, rgba(3, 27, 56, 0.95) 100%), url('ChatGPT Image Jun 29, 2026, 08_47_34 PM.webp') center/cover no-repeat; }
   .hero-container { grid-template-columns: 1fr; gap: 35px; }
   .hero-main-heading { font-size: 44px; }
   .hero-floating-card { max-width: 100%; margin-left: 0; }
@@ -860,8 +1073,8 @@ h1, h2, h3, .heading-font {
 }
 
 @media (max-width: 768px) {
-  .top-bar-container { flex-direction: column; gap: 6px; text-align: center; }
-  .top-left-items { gap: 14px; flex-wrap: wrap; justify-content: center; }
+  .phone-label { display: none; }
+  .phone-number { font-size: 1rem; }
   .hero-main-heading { font-size: 36px; }
   .hero-sub-heading { font-size: 20px; }
   .hero-description { font-size: 15px; }
@@ -873,6 +1086,9 @@ h1, h2, h3, .heading-font {
   .services-grid-layout { grid-template-columns: 1fr; }
   .services-left-block { grid-column: span 1; }
   .ai-chat-modal { right: 15px; bottom: 85px; width: 350px; }
+  .footer-cta-container { flex-direction: column; text-align: center; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .bottom-bar-flex { flex-direction: column; text-align: center; gap: 10px; }
 }
 
 @media (max-width: 480px) {
