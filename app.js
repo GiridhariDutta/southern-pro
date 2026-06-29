@@ -48,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function sendMessage(text) {
     if (!text.trim()) return;
 
-    // Append User Message
     const userMsg = document.createElement('div');
     userMsg.className = 'chat-msg user-msg';
     userMsg.textContent = text;
@@ -57,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (widgetChatInput) widgetChatInput.value = '';
 
-    // Generate AI Response
     setTimeout(() => {
       const aiMsg = document.createElement('div');
       aiMsg.className = 'chat-msg ai-msg';
@@ -110,6 +108,41 @@ document.addEventListener('DOMContentLoaded', () => {
         if (aiChatModal) aiChatModal.style.display = 'flex';
         sendMessage(val);
         cardAiInput.value = '';
+      }
+    });
+  }
+
+  // DESIGN MOCKUP LIGHTBOX MODAL LOGIC
+  const designModalOverlay = document.getElementById('designModalOverlay');
+  const designModalTitle = document.getElementById('designModalTitle');
+  const designModalImage = document.getElementById('designModalImage');
+  const designModalClose = document.getElementById('designModalClose');
+
+  document.addEventListener('click', (e) => {
+    const previewLink = e.target.closest('.design-preview-link');
+    if (previewLink) {
+      e.preventDefault();
+      const imgFile = previewLink.getAttribute('data-img');
+      const title = previewLink.getAttribute('data-title') || 'Design Mockup Sample';
+
+      if (designModalOverlay && designModalImage && designModalTitle) {
+        designModalImage.src = imgFile;
+        designModalTitle.textContent = title;
+        designModalOverlay.style.display = 'flex';
+      }
+    }
+  });
+
+  if (designModalClose && designModalOverlay) {
+    designModalClose.addEventListener('click', () => {
+      designModalOverlay.style.display = 'none';
+    });
+  }
+
+  if (designModalOverlay) {
+    designModalOverlay.addEventListener('click', (e) => {
+      if (e.target === designModalOverlay) {
+        designModalOverlay.style.display = 'none';
       }
     });
   }

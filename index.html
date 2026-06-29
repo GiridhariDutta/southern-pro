@@ -51,6 +51,17 @@
           <li><a href="#about" class="nav-link">ABOUT US</a></li>
           <li><a href="#reviews" class="nav-link">REVIEWS</a></li>
           <li><a href="#contact" class="nav-link">CONTACT</a></li>
+          
+          <!-- Sample Designs Dropdown -->
+          <li class="dropdown-item">
+            <a href="#" class="nav-link dropdown-toggle">SAMPLE DESIGNS <span class="caret">▾</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="design-preview-link" data-img="Jun 29, 2026, 06_54_32 PM.png" data-title="Design Option 1 (Active)">Design Option 1 (Active)</a></li>
+              <li><a href="#" class="design-preview-link" data-img="Jun 29, 2026, 01_33_50 PM.png" data-title="Design Option 2 (Sample)">Design Option 2 (Sample)</a></li>
+              <li><a href="#" class="design-preview-link" data-img="Jun 29, 2026, 01_33_52 PM.png" data-title="Design Option 3 (Sample)">Design Option 3 (Sample)</a></li>
+              <li><a href="#" class="design-preview-link" data-img="Jun 29, 2026, 06_56_29 PM.png" data-title="Design Option 4 (Sample)">Design Option 4 (Sample)</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
 
@@ -203,7 +214,7 @@
         <div class="service-card-body">
           <h3 class="service-card-title">Roofing</h3>
           <p class="service-card-text">Roof replacements, repairs, and installations built to last.</p>
-          <a href="#" class="service-card-link">LEARN MORE &nbsp;&rarr;</a>
+          <a href="#" class="service-card-link design-preview-link" data-img="Jun 29, 2026, 06_54_32 PM.png" data-title="Roofing Design Mockup 1">LEARN MORE &nbsp;&rarr;</a>
         </div>
       </div>
 
@@ -217,7 +228,7 @@
         <div class="service-card-body">
           <h3 class="service-card-title">Storm Damage Restoration</h3>
           <p class="service-card-text">From hail to wind damage, we restore your home and help with the insurance process.</p>
-          <a href="#" class="service-card-link">LEARN MORE &nbsp;&rarr;</a>
+          <a href="#" class="service-card-link design-preview-link" data-img="Jun 29, 2026, 01_33_50 PM.png" data-title="Storm Damage Mockup 2">LEARN MORE &nbsp;&rarr;</a>
         </div>
       </div>
 
@@ -231,7 +242,7 @@
         <div class="service-card-body">
           <h3 class="service-card-title">Solar Solutions</h3>
           <p class="service-card-text">Energy-efficient solar solutions tailored to your home and lifestyle.</p>
-          <a href="#" class="service-card-link">LEARN MORE &nbsp;&rarr;</a>
+          <a href="#" class="service-card-link design-preview-link" data-img="Jun 29, 2026, 01_33_52 PM.png" data-title="Solar Solutions Mockup 3">LEARN MORE &nbsp;&rarr;</a>
         </div>
       </div>
 
@@ -245,7 +256,7 @@
         <div class="service-card-body">
           <h3 class="service-card-title">Gutters &amp; Siding</h3>
           <p class="service-card-text">Protect your home with quality gutters and siding that stand the test of time.</p>
-          <a href="#" class="service-card-link">LEARN MORE &nbsp;&rarr;</a>
+          <a href="#" class="service-card-link design-preview-link" data-img="Jun 29, 2026, 06_56_29 PM.png" data-title="Gutters & Siding Mockup 4">LEARN MORE &nbsp;&rarr;</a>
         </div>
       </div>
 
@@ -312,6 +323,19 @@
       <button id="widgetSendBtn" class="widget-send-btn">
         <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
       </button>
+    </div>
+  </div>
+
+  <!-- Design Mockup Full-Screen Preview Lightbox Modal -->
+  <div class="design-modal-overlay" id="designModalOverlay">
+    <div class="design-modal-container">
+      <div class="design-modal-header">
+        <h3 id="designModalTitle">Design Sample Preview</h3>
+        <button class="design-modal-close" id="designModalClose">&times;</button>
+      </div>
+      <div class="design-modal-body">
+        <img id="designModalImage" src="" alt="Design Preview">
+      </div>
     </div>
   </div>
 
