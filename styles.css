@@ -533,3 +533,136 @@ h1, h2, h3, .heading-font {
   cursor: pointer;
   font-weight: 800;
 }
+
+/* ==========================================
+   COMPREHENSIVE RESPONSIVE MEDIA QUERIES
+   ========================================== */
+
+/* Large Laptops & Desktops (1200px and below) */
+@media (max-width: 1200px) {
+  .hero-main-heading {
+    font-size: 52px;
+  }
+  .services-grid-layout {
+    grid-template-columns: 200px repeat(2, 1fr) 220px;
+  }
+  .nav-menu {
+    gap: 16px;
+  }
+  .nav-link {
+    font-size: 13px;
+  }
+}
+
+/* Tablets (992px and below) */
+@media (max-width: 992px) {
+  .header-container {
+    height: auto;
+    padding: 15px 24px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .nav-wrapper {
+    width: 100%;
+    order: 3;
+  }
+  .nav-menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px 20px;
+  }
+  .hero-section {
+    padding: 50px 0 70px;
+    background: linear-gradient(180deg, #031B38 0%, rgba(3, 27, 56, 0.95) 100%), url('ChatGPT Image Jun 29, 2026, 08_47_34 PM.png') center/cover no-repeat;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .hero-main-heading {
+    font-size: 44px;
+  }
+  .stats-flex-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .stat-col {
+    border-right: none;
+  }
+  .stat-texas-col {
+    grid-column: span 3;
+    justify-content: center;
+  }
+  .services-grid-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-left-block {
+    grid-column: span 2;
+    text-align: center;
+    align-items: center;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Mobile Devices (768px and below) */
+@media (max-width: 768px) {
+  .top-bar-container {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+  .top-left-items {
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero-main-heading {
+    font-size: 36px;
+  }
+  .hero-sub-heading {
+    font-size: 20px;
+  }
+  .hero-description {
+    font-size: 15px;
+  }
+  .hero-cta-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .btn-primary-cta, .btn-secondary-cta {
+    width: 100%;
+  }
+  .trust-badges-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .stats-flex-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stat-texas-col {
+    grid-column: span 2;
+  }
+  .services-grid-layout {
+    grid-template-columns: 1fr;
+  }
+  .services-left-block {
+    grid-column: span 1;
+  }
+}
+
+/* Small Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+  .hero-main-heading {
+    font-size: 30px;
+  }
+  .stats-flex-row {
+    grid-template-columns: 1fr;
+  }
+  .stat-texas-col {
+    grid-column: span 1;
+  }
+  .hero-floating-card {
+    padding: 24px 18px;
+  }
+}
