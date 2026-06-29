@@ -193,7 +193,6 @@
         </button>
       </div>
 
-      <!-- Service 1: Roofing (Roofing Installation) -->
       <div class="service-item-card">
         <div class="service-card-image-box">
           <img src="https://images.unsplash.com/photo-1628744876497-eb30460be9f6?auto=format&fit=crop&w=600&q=80" alt="Roofing">
@@ -208,7 +207,6 @@
         </div>
       </div>
 
-      <!-- Service 2: Storm Damage Restoration (Stormy Sky / House) -->
       <div class="service-item-card">
         <div class="service-card-image-box">
           <img src="https://images.unsplash.com/photo-1527030280862-64139fba04ca?auto=format&fit=crop&w=600&q=80" alt="Storm Damage Restoration">
@@ -223,7 +221,6 @@
         </div>
       </div>
 
-      <!-- Service 3: Solar Solutions (Rooftop Solar Panels) -->
       <div class="service-item-card">
         <div class="service-card-image-box">
           <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=600&q=80" alt="Solar Solutions">
@@ -238,7 +235,6 @@
         </div>
       </div>
 
-      <!-- Service 4: Gutters & Siding (Modern House Exterior Siding) -->
       <div class="service-item-card">
         <div class="service-card-image-box">
           <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Gutters & Siding">
@@ -253,7 +249,6 @@
         </div>
       </div>
 
-      <!-- Service 5: Service AI Card -->
       <div class="service-ai-card">
         <div class="ai-card-top-header">
           <div class="ai-robot-circle">
@@ -278,6 +273,47 @@
       </div>
     </div>
   </section>
+
+  <!-- Floating AI Assistant Chat Widget -->
+  <div class="floating-ai-widget" id="floatingAiWidget">
+    <button class="ai-chat-toggle-btn" id="aiChatToggleBtn">
+      <div class="ai-online-pulse"></div>
+      <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 16h.01M16 16h.01"/></svg>
+    </button>
+  </div>
+
+  <!-- Floating AI Chat Modal Box -->
+  <div class="ai-chat-modal" id="aiChatModal">
+    <div class="ai-chat-header">
+      <div class="ai-header-left">
+        <div class="ai-avatar-circle">🤖</div>
+        <div>
+          <div class="ai-header-title">Southern Pro AI Assistant</div>
+          <div class="ai-header-status"><span class="green-dot"></span> Online &amp; Ready to Help</div>
+        </div>
+      </div>
+      <button class="ai-chat-close-btn" id="aiChatCloseBtn">&times;</button>
+    </div>
+
+    <div class="ai-chat-body" id="aiChatBody">
+      <div class="chat-msg ai-msg">
+        Hello! 👋 Welcome to Southern Pro Roofing &amp; Restoration. How can I help you with your roof inspection, storm damage, or project estimate today?
+      </div>
+      <div class="chat-chips-container">
+        <button class="chip-btn" data-query="Schedule Free Inspection">📅 Schedule Inspection</button>
+        <button class="chip-btn" data-query="Get Roof Estimate">💰 Roof Estimate</button>
+        <button class="chip-btn" data-query="Storm Damage Claim">🌩️ Storm Claim</button>
+        <button class="chip-btn" data-query="Financing Options">💳 Financing</button>
+      </div>
+    </div>
+
+    <div class="ai-chat-footer">
+      <input type="text" id="widgetChatInput" placeholder="Type your message here...">
+      <button id="widgetSendBtn" class="widget-send-btn">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
